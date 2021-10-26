@@ -1,0 +1,28 @@
+{
+  "name": "trip/sorter",
+  "description": "Trip Sorter",
+  "type": "project",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "v9.5.*"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Tripsorter\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "App\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "tests": "./vendor/bin/phpunit --configuration phpunit.xml --debug --verbose --debug"
+  }
+}
